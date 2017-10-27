@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int random_num(){
+  return 0;
+}
+
+int main(){
+  int blah[10];
+  for(int i = 0; i<10; i++){
+    blah[i] = random_num();
+  }
+  //write array to file
+  //read file into different array
+  int wow[10];
+  //print content of second arr
+  return 0;
+}
