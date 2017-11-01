@@ -39,7 +39,8 @@ int main(){
   }
 
   //write array to file
-  int fd = open("array", O_WRONLY | O_CREAT | O_EXCL, 0644);
+  //O_TRUNC moves file "marker" to the end of the file 
+  int fd = open("array", O_WRONLY | O_CREAT | O_TRUNC, 0644);
   //printf("writefile: %d\n", writefile);
   //printf("error: %s\n", strerror(errno)); 
   write(fd, arr1, sizeof(arr1));
